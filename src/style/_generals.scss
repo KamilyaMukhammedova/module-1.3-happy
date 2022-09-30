@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap');
+
 *,
 *::before,
 *::after {
@@ -8,12 +10,13 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 22.4px;
   color: $blackColor;
 }
 
-.content {
+.container {
   margin: 0 auto;
-  max-width: 720px;
+  max-width: 1200px;
+  padding: 0 5px;
 }

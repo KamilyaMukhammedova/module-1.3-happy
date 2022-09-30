@@ -1,0 +1,27 @@
+.dark-btn-block {
+  &__btn {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $whiteColor;
+    background-color: $blackColor;
+    display: inline-block;
+    border: transparent;
+    border-radius: 3px;
+
+    &:hover {
+      background-color: $darkGrey;
+      cursor: pointer;
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+
+    &:focus {
+      outline-color: $lightBlue;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.nav-block {
+  &__nav-list {
+    list-style: none;
+    margin: 0;
+  }
+
+  &__nav-item {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+
+  &__nav-item {
+    margin-left: 39px;
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    color: $greyColor;
+
+    &:hover {
+      background: #AF5EF2;
+      background: linear-gradient(to right, #AF5EF2 0%, #2ac6c8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
