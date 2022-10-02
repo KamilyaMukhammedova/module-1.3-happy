@@ -1,8 +1,8 @@
 .header-block {
-  padding: 16px 15px 17px 15px;
-  position: sticky;
-  top: 0;
-  z-index: 999;
+  padding: 16px 15px 20px 15px;
+  //position: sticky;
+  //top: 0;
+  //z-index: 999;
   background-color: $whiteColor;
 
   &__inner-flex {
@@ -58,22 +58,4 @@
       font-size: 25px;
     }
   }
-
-  //&__menu-btn {
-  //  border: none;
-  //  background-color: transparent;
-  //
-  //  &:hover {
-  //    background-color: $hoverGrey;
-  //    height: 50px;
-  //    width: 50px;
-  //    border-radius: 50%;
-  //    cursor: pointer;
-  //  }
-  //
-  //  &:focus {
-  //    background-color: transparent;
-  //    border-color: $lightBlue;
-  //  }
-  //}
 }

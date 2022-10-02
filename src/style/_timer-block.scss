@@ -1,0 +1,252 @@
+.timer-block {
+  background: url("img/main-bg.png") 50% 50%/100% no-repeat;
+  height: 436px;
+  background-size: cover;
+  color: $whiteColor;
+  text-align: center;
+  font-weight: 700;
+
+  &__text-lg {
+    font-size: 50px;
+    line-height: 70px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    padding: 62px 0 0 0;
+
+    @include medium {
+      font-size: 40px;
+      line-height: 60px;
+    }
+
+    @include small {
+      width: 70%;
+      margin: 0 auto;
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  &__text-md {
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 1.5px;
+    padding: 3px 0 0 0;
+
+    @include medium {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @include small {
+      font-size: 17px;
+      line-height: 25px;
+    }
+  }
+
+  &__text-sm {
+    font-size: 23px;
+    line-height: 36px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+
+    @include extra-large {
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    @include large {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    @include medium {
+      font-size: 15px;
+      line-height: 40px;
+    }
+
+    @include small {
+      font-size: 11px;
+      line-height: 30px;
+    }
+
+  }
+
+  &__time-flex {
+    display: flex;
+    width: 70%;
+    margin: 12px 10% 0 18%;
+
+    @include extra-large {
+      width: 80%;
+      margin: 15px auto 0;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    @include small {
+      margin-top: 40px;
+      width: 85%;
+    }
+  }
+
+  &__divider {
+    display: none;
+
+    @include small {
+      display: inline;
+    }
+  }
+
+  &__box {
+    width: 23%;
+    margin-left: 11px;
+    text-align: left;
+
+    @include extra-large {
+      margin-left: 0;
+      text-align: left;
+    }
+
+    @include small {
+      text-align: right !important;
+    }
+  }
+
+  &_days-box {
+    @include extra-large {
+      text-align: right;
+      width: 28%;
+    }
+
+    @include small {
+      width: 25%;
+    }
+  }
+
+  &_hours-box {
+    @include extra-large {
+      width: 21%;
+      text-align: right;
+    }
+
+    @include small {
+      width: 25%;
+    }
+  }
+
+  &_minutes-box {
+    margin-left: 17px;
+
+    @include extra-large {
+      margin-left: 0;
+      width: 21%;
+      text-align: right;
+    }
+
+    @include small {
+      width: 25%;
+    }
+  }
+
+  &_seconds-box {
+    margin-left: 16px;
+
+    @include extra-large {
+      margin-left: 0;
+      width: 25%;
+      text-align: left;
+      padding-left: 3%;
+    }
+
+    @include small {
+      width: 25%;
+      padding-left: 0;
+    }
+  }
+
+  &__number {
+    font-size: 100px;
+    line-height: 131px;
+    letter-spacing: 1.1px;
+    font-weight: 300;
+
+    @include extra-large {
+      font-size: 80px;
+      line-height: 110px;
+    }
+
+    @include large {
+      font-size: 65px;
+      line-height: 100px;
+    }
+
+    @include medium {
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    @include small {
+      font-size: 34px;
+      line-height: 40px;
+    }
+  }
+
+  &_day-number {
+    margin-left: 20px;
+
+    @include extra-large {
+      margin-left: 0;
+    }
+  }
+
+  &_day-text {
+    margin-left: 29px;
+
+    @include extra-large {
+      margin-left: 0;
+      padding-right: 25%;
+    }
+
+    @include small {
+      padding-right: 13%;
+    }
+  }
+
+  &_hours-text {
+    margin-left: 19px;
+
+    @include extra-large {
+      margin-left: 0;
+      padding-right: 39%;
+    }
+
+    @include small {
+      padding-right: 15%;
+    }
+  }
+
+  &_minutes-text {
+    margin-left: 2px;
+
+    @include extra-large {
+      margin-left: 0;
+      padding-right: 25%;
+    }
+
+    @include small {
+      padding-right: 13%;
+    }
+  }
+
+  &_seconds-text {
+    margin-left: 6px;
+
+    @include extra-large {
+      margin-left: 0;
+    }
+  }
+
+  &__msg {
+    display: none;
+  }
+}
