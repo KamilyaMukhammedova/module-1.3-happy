@@ -127,10 +127,18 @@
                     </p>
                     <div class="future-block__btn-block-flex">
                         <div class="dark-btn-block future-block__dark-btn-block">
-                            <button class="dark-btn-block__btn future-block__btn-buy">Buy now</button>
+                            <button
+                                    class="dark-btn-block__btn future-block__btn-buy open-modal-btn"
+                            >
+                                Buy now
+                            </button>
                         </div>
                         <div class="dark-btn-block future-block__dark-btn-block">
-                            <button class="dark-btn-block__btn future-block__btn-read">Read more</button>
+                            <button
+                                    class="dark-btn-block__btn future-block__btn-read"
+                            >
+                                Read more
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -142,9 +150,177 @@
             </div>
         </div>
     </div>
-
     <div class="phones-block">
+        <div class="container">
+            <div class="small-text small-text_white">Features</div>
+            <h3 class="medium-title medium-title_white phones-block__medium-title">
+                The latest & greatest in phone photography.
+            </h3>
+            <div class="phones-block__inner-flex">
+                <div class="phones-block__card">
+                    <div class="phones-block__phone-div">
+                        <img src="img/iphone1.png" alt="Calendar view" class="phones-block__phone-img">
+                    </div>
+                    <div class="phones-block__description-div">
+                        <img src="img/ic1.svg" alt="Icon 1" class="phones-block__icon">
+                        <p class="phones-block__color-title phones-block_blue-title">
+                            Calendar view
+                        </p>
+                        <div class="phones-block__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nullam scelerisque aliquam odio et faucibus.
+                        </div>
+                    </div>
+                </div>
+                <div class="phones-block__card">
+                    <div class="phones-block__phone-div">
+                        <img src="img/iphone2.png" alt="Lists" class="phones-block__phone-img">
+                    </div>
+                    <div class="phones-block__description-div">
+                        <img src="img/ic2.svg" alt="Icon 2" class="phones-block__icon">
+                        <p class="phones-block__color-title phones-block_red-title">
+                            Lists
+                        </p>
+                        <div class="phones-block__text">
+                            Dolor sit amet urna turpis. Mauris euismod elit et nisi ultrices,
+                            ut faucibus orci tincidunt.
+                        </div>
+                    </div>
+                </div>
+                <div class="phones-block__card">
+                    <div class="phones-block__phone-div">
+                        <img src="img/iphone3.png" alt="Varied type" class="phones-block__phone-img">
+                    </div>
+                    <div class="phones-block__description-div">
+                        <img src="img/ic3.svg" alt="Icon 3" class="phones-block__icon">
+                        <p class="phones-block__color-title phones-block_orange-title">
+                            Varied type
+                        </p>
+                        <div class="phones-block__text">
+                            Nulla rhoncus feugiat eros quis consectetur.
+                            Morbi neque ex, condimentum dapibus congue.
+                        </div>
+                    </div>
+                </div>
+                <div class="phones-block__card">
+                    <div class="phones-block__phone-div">
+                        <img src="img/iphone4.png" alt="Split-screen" class="phones-block__phone-img">
+                    </div>
+                    <div class="phones-block__description-div">
+                        <img src="img/ic4.svg" alt="Icon 4" class="phones-block__icon">
+                        <p class="phones-block__color-title phones-block_pink-title">
+                            Split-screen
+                        </p>
+                        <div class="phones-block__text">
+                            Vestibulum ultrices, orci nec egestas pharetra,
+                            ligula est semper enim, nec auctor sapien leo nec purus.
+                        </div>
+                    </div>
+                </div>
+                <div class="phones-block__card">
+                    <div class="phones-block__phone-div">
+                        <img src="img/iphone5.png" alt="Uploads" class="phones-block__phone-img">
+                    </div>
+                    <div class="phones-block__description-div">
+                        <img src="img/ic5.svg" alt="Icon 5" class="phones-block__icon">
+                        <p class="phones-block__color-title phones-block_turquoise-title">
+                            Uploads
+                        </p>
+                        <div class="phones-block__text">
+                            Duis tristique sed lorem a vestibulum.
+                            Cras commodo consequat orci, in convallis risus egestas non.
+                        </div>
+                    </div>
+                </div>
+                <div class="phones-block__card">
+                    <div class="phones-block__phone-div">
+                        <img src="img/iphone6.png" alt="Focus mode" class="phones-block__phone-img">
+                    </div>
+                    <div class="phones-block__description-div">
+                        <img src="img/ic6.svg" alt="Icon 6" class="phones-block__icon">
+                        <p class="phones-block__color-title phones-block_purple-title">
+                            Focus mode
+                        </p>
+                        <div class="phones-block__text">
+                            Lorem sit amet urna turpis. Mauris euismod elit et nisi ultrices,
+                            ut faucibus orci tincidunt.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="modal-window" id="modal-window">
+        <div class="modal-window__content">
+            <div class="modal-window__close-btn-div">
+                <button class="btn-icon" id="close-modal-btn">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <p class="modal-window__title">
+                Leave a request for the purchase of goods
+            </p>
+            <form class="modal-window__form">
+                <div class="modal-window__field-block">
+                    <input
+                            type="text" placeholder="name"
+                            id="user-name" class="modal-window__user-name"
+                    />
+                    <span class="modal-window__required-error" id="user-name-req"></span>
+                </div>
+                <div class="modal-window__field-block">
+                    <input
+                            type="email" placeholder="email"
+                            id="user-email" class="modal-window__user-email"
+                    />
+                    <span class="modal-window__required-error" id="user-email-req"></span>
+                </div>
+                <p class="modal-window__question">Your plan?</p>
+                <button class="modal-window__plan-btn">
+                    <label for="standard">
+                        <input type="radio" name="plan" id="standard" value="standard" class="modal-window__radio-inp"/>
+                        Standart
+                    </label>
+                </button>
+                <button class="modal-window__plan-btn">
+                    <label for="premium">
+                        <input type="radio" name="plan" id="premium" value="premium" class="modal-window__radio-inp"/>
+                        Premium
+                    </label>
+                </button>
+                <button class="modal-window__plan-btn">
+                    <label for="lifetime">
+                        <input type="radio" name="plan" id="lifetime" value="lifetime" class="modal-window__radio-inp"/>
+                        Lifetime
+                    </label>
+                </button>
+                <p class="modal-window__question">How did you know about our app?</p>
+                <div class="modal-window__social-network">
+                    <label for="facebook">
+                        <input type="checkbox" value="facebook" id="facebook"/> Facebook
+                    </label>
+                </div>
+                <div class="modal-window__social-network">
+                    <label for="instagram">
+                        <input type="checkbox" value="instagram" id="instagram"/> Instagram
+                    </label>
+                </div>
+                <div class="modal-window__social-network">
+                    <label for="youtube">
+                        <input type="checkbox" value="youtube" id="youtube"/> Youtube
+                    </label>
+                </div>
+                <div class="modal-window__social-network">
+                    <label for="other">
+                        <input type="checkbox" value="other" id="other"/> Other
+                    </label>
+                </div>
+                <div class="dark-btn-block modal-window__dark-btn-block">
+                    <button class="dark-btn-block__btn modal-window-block__btn">Send</button>
+                </div>
+            </form>
+        </div>
     </div>
 </main>
 </body>

@@ -1,0 +1,14 @@
+.small-text {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  &_white {
+    color: $whiteColor;
+  }
+
+  &_black {
+    color: $blackColor;
+  }
+}

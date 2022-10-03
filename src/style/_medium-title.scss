@@ -1,0 +1,13 @@
+.medium-title {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 300;
+
+  &_white {
+    color: $whiteColor;
+  }
+
+  &_black {
+    color: $blackColor;
+  }
+}
