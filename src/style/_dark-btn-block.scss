@@ -9,7 +9,7 @@
     background-color: $blackColor;
     display: inline-block;
     border: transparent;
-    border-radius: 3px;
+    border-radius: 4px;
 
     &:hover {
       background-color: $darkGrey;
@@ -22,6 +22,18 @@
 
     &:focus {
       outline-color: $lightBlue;
+    }
+
+    @include large {
+      font-size: 13px;
+    }
+
+    @include large {
+      font-size: 11px;
+    }
+
+    @include small {
+      font-size: 9px;
     }
   }
 }
