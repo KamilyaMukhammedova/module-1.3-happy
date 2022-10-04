@@ -1,0 +1,52 @@
+.footer-block {
+  background-color: $lightGrey;
+  text-align: center;
+  padding: 8.7% 0 8.5%;
+
+  &__logo {
+    margin-bottom: 20px;
+
+    @include medium {
+      width: 90px;
+      height: 90px;
+    }
+
+    @include small {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  &__social-links {
+    font-size: 28px;
+    width: 14%;
+    margin: 0 auto;
+    text-align: left;
+
+    @include large {
+      width: 50%;
+      text-align: center;
+    }
+
+    @include medium {
+      font-size: 23px;
+    }
+  }
+
+  &__link {
+    color: inherit;
+    margin-left: 14px;
+
+    &:hover {
+      color: $blueColor;
+    }
+  }
+
+  &_link1 {
+    margin-left: 25px;
+
+    @include large {
+      margin-left: 0;
+    }
+  }
+}
