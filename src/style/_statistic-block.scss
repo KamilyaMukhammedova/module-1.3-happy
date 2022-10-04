@@ -1,0 +1,103 @@
+.statistic-block {
+  background-color: $redColor;
+  color: $whiteColor;
+  padding: 5.6% 0 6.9% 0;
+
+  @include large {
+    text-align: center;
+  }
+
+  @include medium {
+    padding: 6.9% 20px;
+  }
+
+  &__inner-flex {
+    display: flex;
+  }
+
+  &__number {
+    font-size: 95px;
+    line-height: 96px;
+    margin-bottom: 20px;
+
+    @include large {
+      font-size: 88px;
+      line-height: 93px;
+    }
+
+    @include medium {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    @include small {
+      font-size: 34px;
+      line-height: 30px;
+    }
+  }
+
+  &__box {
+    width: 33%;
+  }
+
+  &__box1 {
+    padding-left: 6.5%;
+
+    @include large {
+      padding-left: 0;
+    }
+  }
+
+  &_number2 {
+    padding-left: 28.5%;
+
+    @include large {
+      padding-left: 0;
+    }
+  }
+
+  &_number3 {
+    padding-left: 27.5%;
+
+    @include large {
+      padding-left: 0;
+    }
+  }
+
+  &_small-text1 {
+    padding-left: 13%;
+
+    @include large {
+      padding-left: 0;
+    }
+  }
+
+  &_small-text2 {
+    padding-left: 26%;
+
+    @include large {
+      padding-left: 0;
+    }
+  }
+
+  &_small-text3 {
+    padding-left: 41%;
+
+    @include large {
+      padding-left: 0;
+    }
+  }
+
+  &_small-text1,
+  &_small-text2,
+  &_small-text3 {
+    @include medium {
+      font-size: 10px;
+    }
+
+    @include small {
+      font-size: 9px;
+      line-height: 15px;
+    }
+  }
+}

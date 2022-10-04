@@ -4,6 +4,10 @@
   letter-spacing: 2px;
   text-transform: uppercase;
 
+  @include large {
+    font-size: 13px;
+  }
+
   &_white {
     color: $whiteColor;
   }
