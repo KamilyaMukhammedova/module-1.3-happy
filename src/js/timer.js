@@ -3,7 +3,8 @@ const finaleDate = new Date("October 17, 2022 00:00:00").getTime();
 const timer = () => {
    const now = new Date().getTime();
    let diff = finaleDate - now;
-   if(diff < 0){
+
+   if(diff < 0) {
     document.getElementById('.msg').style.display = 'block';
     document.getElementById('.timer').style.display = 'none';
   }

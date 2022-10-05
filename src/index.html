@@ -40,6 +40,102 @@
         </div>
     </div>
 </div>
+<div id="modal-window" class="modal-window">
+    <div class="modal-window__content">
+        <button class="btn-icon modal-window__close-btn" id="close-modal-btn">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+        <p class="modal-window__title">
+            Leave a request for the purchase of goods
+        </p>
+        <form class="modal-window__form" id="form">
+            <div class="modal-window__field-block">
+                <input
+                        type="text" placeholder="name"
+                        id="user-name" class="modal-window__input"
+                />
+                <span class="modal-window__required-error" id="user-name-req"></span>
+            </div>
+            <div class="modal-window__field-block">
+                <input
+                        type="email" placeholder="email"
+                        id="user-email" class="modal-window__input"
+                />
+                <span class="modal-window__required-error" id="user-email-req"></span>
+            </div>
+            <div class="modal-window__question">Your plan?</div>
+            <div class="modal-window__btns-box">
+                <button class="modal-window__plan-btn modal-window_blue-btn" id="standardBtn">
+                    <input
+                            type="radio" name="plan"
+                            id="standard" value="standard"
+                            class="modal-window__radio-inp"
+                    />
+                    <i class="fa fa-check modal-window__check" aria-hidden="true" id="check-icon-standard"></i>
+                    <label for="standard" class="modal-window__label">Standart</label>
+                </button>
+                <button class="modal-window__plan-btn modal-window_red-btn" id="premiumBtn">
+                    <input
+                            type="radio" name="plan"
+                            id="premium" value="premium"
+                            class="modal-window__radio-inp"
+                    />
+                    <i class="fa fa-check modal-window__check" aria-hidden="true" id="check-icon-premium"></i>
+                    <label for="premium" class="modal-window__label">Premium</label>
+                </button>
+                <button class="modal-window__plan-btn modal-window_orange-btn" id="lifetimeBtn">
+                    <input
+                            type="radio" name="plan"
+                            id="lifetime" value="lifetime"
+                            class="modal-window__radio-inp"
+                    />
+                    <i class="fa fa-check modal-window__check" aria-hidden="true" id="check-icon-lifetime"></i>
+                    <label for="lifetime" class="modal-window__label">Lifetime</label>
+                </button>
+            </div>
+            <p class="modal-window__question">How did you know about our app?</p>
+            <div class="modal-window__social-box">
+                <div class="modal-window__social-network">
+                    <label for="facebook" class="modal-window__social-label">
+                        <input type="checkbox" value="facebook" id="facebook" class="modal-window__checkbox"/>
+                        <span>Facebook</span>
+                    </label>
+                </div>
+                <div class="modal-window__social-network">
+                    <label for="instagram" class="modal-window__social-label">
+                        <input type="checkbox" value="instagram" id="instagram" class="modal-window__checkbox"/>
+                        <span>Instagram</span>
+                    </label>
+                </div>
+                <div class="modal-window__social-network">
+                    <label for="youtube" class="modal-window__social-label">
+                        <input type="checkbox" value="youtube" id="youtube" class="modal-window__checkbox"/>
+                        <span>Youtube</span>
+                    </label>
+                </div>
+                <div class="modal-window__social-network">
+                    <label for="other" class="modal-window__social-label">
+                        <input type="checkbox" value="other" id="other" class="modal-window__checkbox"/>
+                        <span>Other</span>
+                    </label>
+                </div>
+            </div>
+            <div class="dark-btn-block modal-window__dark-btn-block">
+                <button
+                        class="dark-btn-block__btn modal-window__btn"
+                        id="submit-btn" type="submit"
+                        disabled
+                >
+                    Send
+                </button>
+            </div>
+            <div class="modal-window__loading-div" id="loading">
+                <img src="img/time-icon.png" alt="Time icon" class="modal-window__time-icon">
+                <span class="small-text modal-window__small-text-loading">Loading...</span>
+            </div>
+        </form>
+    </div>
+</div>
 <header class="header-block">
     <div class="container">
         <div class="header-block__inner-flex">
@@ -302,7 +398,7 @@
                   </g>
                   <defs>
                     <clipPath id="clip0_1_201">
-                      <rect width="24" height="24" fill="white" />
+                      <rect width="24" height="24" fill="white"/>
                     </clipPath>
                   </defs>
                 </svg>
@@ -338,7 +434,7 @@
                   </g>
                   <defs>
                     <clipPath id="clip0_1_196">
-                      <rect width="24" height="24" fill="white" />
+                      <rect width="24" height="24" fill="white"/>
                     </clipPath>
                   </defs>
                 </svg>
@@ -391,92 +487,6 @@
                     </button>
                 </div>
             </div>
-        </div>
-    </div>
-    <div id="modal-window" class="modal-window">
-        <div class="modal-window__content">
-                <button class="btn-icon modal-window__close-btn" id="close-modal-btn">
-                    <i class="fa fa-times" aria-hidden="true"></i>
-                </button>
-            <p class="modal-window__title">
-                Leave a request for the purchase of goods
-            </p>
-            <form class="modal-window__form">
-                <div class="modal-window__field-block">
-                    <input
-                            type="text" placeholder="name"
-                            id="user-name" class="modal-window__input"
-                    />
-                    <span class="modal-window__required-error" id="user-name-req"></span>
-                </div>
-                <div class="modal-window__field-block">
-                    <input
-                            type="email" placeholder="email"
-                            id="user-email" class="modal-window__input"
-                    />
-                    <span class="modal-window__required-error" id="user-email-req"></span>
-                </div>
-                <div class="modal-window__question">Your plan?</div>
-                <div class="modal-window__btns-box">
-                    <button class="modal-window__plan-btn modal-window_blue-btn" id="standardBtn">
-                        <input
-                                type="radio" name="plan"
-                                id="standard" value="standard"
-                                class="modal-window__radio-inp"
-                        />
-                        <i class="fa fa-check modal-window__check" aria-hidden="true" id="check-icon-standard"></i>
-                        <label for="standard" class="modal-window__label">Standart</label>
-                    </button>
-                    <button class="modal-window__plan-btn modal-window_red-btn" id="premiumBtn">
-                        <input
-                                type="radio" name="plan"
-                                id="premium" value="premium"
-                                class="modal-window__radio-inp"
-                        />
-                        <i class="fa fa-check modal-window__check" aria-hidden="true" id="check-icon-premium"></i>
-                        <label for="premium" class="modal-window__label">Premium</label>
-                    </button>
-                    <button class="modal-window__plan-btn modal-window_orange-btn" id="lifetimeBtn">
-                        <input
-                                type="radio" name="plan"
-                                id="lifetime" value="lifetime"
-                                class="modal-window__radio-inp"
-                        />
-                        <i class="fa fa-check modal-window__check" aria-hidden="true" id="check-icon-lifetime"></i>
-                        <label for="lifetime" class="modal-window__label">Lifetime</label>
-                    </button>
-                </div>
-                <p class="modal-window__question">How did you know about our app?</p>
-                <div class="modal-window__social-box">
-                    <div class="modal-window__social-network">
-                        <label for="facebook" class="modal-window__social-label">
-                            <input type="checkbox" value="facebook" id="facebook" class="modal-window__checkbox"/>
-                            <span>Facebook</span>
-                        </label>
-                    </div>
-                    <div class="modal-window__social-network">
-                        <label for="instagram" class="modal-window__social-label">
-                            <input type="checkbox" value="instagram" id="instagram" class="modal-window__checkbox"/>
-                            <span>Instagram</span>
-                        </label>
-                    </div>
-                    <div class="modal-window__social-network">
-                        <label for="youtube" class="modal-window__social-label">
-                            <input type="checkbox" value="youtube" id="youtube" class="modal-window__checkbox"/>
-                            <span>Youtube</span>
-                        </label>
-                    </div>
-                    <div class="modal-window__social-network">
-                        <label for="other" class="modal-window__social-label">
-                            <input type="checkbox" value="other" id="other" class="modal-window__checkbox"/>
-                            <span>Other</span>
-                        </label>
-                    </div>
-                </div>
-                <div class="dark-btn-block modal-window__dark-btn-block">
-                    <button class="dark-btn-block__btn modal-window__btn" id="submit-btn">Send</button>
-                </div>
-            </form>
         </div>
     </div>
 </main>

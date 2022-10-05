@@ -21,3 +21,9 @@
     @content
   }
 }
+
+@keyframes time {
+  50% {
+    transform: rotate(360deg);
+  }
+}

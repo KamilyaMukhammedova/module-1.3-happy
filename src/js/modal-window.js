@@ -1,19 +1,34 @@
-const modalWindow = document.getElementById('modal-window');
+import {errorReqEmail, errorReqName, submitBtn, userEmail, userName} from "./form-validation";
+
+export const modalWindow = document.getElementById('modal-window');
 const closeBtn = document.getElementById('close-modal-btn');
 const openBtnMain = document.getElementById('open-modal-btn-main');
+
 const standardPlan = document.getElementById('standard');
 const premiumPlan = document.getElementById('premium');
 const lifetimePlan = document.getElementById('lifetime');
+
 const standardBtn = document.getElementById('standardBtn');
 const premiumBtn = document.getElementById('premiumBtn');
 const lifetimeBtn = document.getElementById('lifetimeBtn');
+
 const checkIconStandard = document.getElementById('check-icon-standard');
 const checkIconPremium = document.getElementById('check-icon-premium');
 const checkIconLifetime = document.getElementById('check-icon-lifetime');
-const userName = document.getElementById('user-name');
-const userEmail = document.getElementById('user-email');
-const errorReqName = document.getElementById('user-name-req');
-const errorReqEmail = document.getElementById('user-email-req');
+
+const buyStandardBtn = document.getElementById('buy-standard-btn');
+const buyPremiumBtn = document.getElementById('buy-premium-btn');
+const buyLifetimeBtn = document.getElementById('buy-lifetime-btn');
+
+export const clearFields = () => {
+  userName.value = '';
+  userEmail.value = '';
+  errorReqName.innerText = '';
+  errorReqEmail.innerText = '';
+  userName.style.backgroundColor = '#F2F2F2';
+  userEmail.style.backgroundColor = '#F2F2F2';
+  submitBtn.disabled = true;
+};
 
 const checkBtnsColor = () => {
   if (lifetimePlan.checked) {
@@ -55,15 +70,6 @@ const checkBtnsColor = () => {
   }
 };
 
-const clearFields = () => {
-  userName.value = '';
-  userEmail.value = '';
-  errorReqName.innerText = '';
-  errorReqEmail.innerText = '';
-  userName.style.backgroundColor = '#F2F2F2';
-  userEmail.style.backgroundColor = '#F2F2F2';
-};
-
 closeBtn.addEventListener('click', () => {
   modalWindow.style.display = 'none';
   clearFields();
@@ -83,50 +89,33 @@ openBtnMain.addEventListener('click', () => {
   checkBtnsColor();
 });
 
-lifetimeBtn.addEventListener('click', (event) => {
-  modalWindow.style.display = 'block';
-  event.preventDefault();
-  lifetimePlan.checked = true;
+const onPlanBtnListener = (btn, plan) => {
+  btn.addEventListener('click', (event) => {
+    modalWindow.style.display = 'block';
+    event.preventDefault();
+    plan.checked = true;
 
-  checkBtnsColor();
-});
+    checkBtnsColor();
+  });
+};
 
-standardBtn.addEventListener('click', (event) => {
-  modalWindow.style.display = 'block';
-  event.preventDefault();
-  standardPlan.checked = true;
+const onBuyBtnListener = (btn, plan) => {
+  btn.addEventListener('click', () => {
+    modalWindow.style.display = 'block';
+    plan.checked = true;
 
-  checkBtnsColor();
-});
+    checkBtnsColor();
+  });
+};
 
-premiumBtn.addEventListener('click', (event) => {
-  modalWindow.style.display = 'block';
-  event.preventDefault();
-  premiumPlan.checked = true;
+onPlanBtnListener(lifetimeBtn, lifetimePlan);
+onPlanBtnListener(standardBtn, standardPlan);
+onPlanBtnListener(premiumBtn, premiumPlan);
 
-  checkBtnsColor();
-});
+onBuyBtnListener(buyLifetimeBtn, lifetimePlan);
+onBuyBtnListener(buyStandardBtn, standardPlan);
+onBuyBtnListener(buyPremiumBtn, premiumPlan);
 
-document.getElementById('buy-standard-btn').addEventListener('click', () => {
-  modalWindow.style.display = 'block';
-  standardPlan.checked = true;
-
-  checkBtnsColor();
-});
-
-document.getElementById('buy-premium-btn').addEventListener('click', () => {
-  modalWindow.style.display = 'block';
-  premiumPlan.checked = true;
-
-  checkBtnsColor();
-});
-
-document.getElementById('buy-lifetime-btn').addEventListener('click', () => {
-  modalWindow.style.display = 'block';
-  lifetimePlan.checked = true;
-
-  checkBtnsColor();
-});
 
 
 
